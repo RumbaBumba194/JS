@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h2> Ahoj světe! </h2>
+    <button onclick="zmenPozdrav()">Změnit pozdrav</button>
+
     <script>
 
 // Různé pomůcky
@@ -215,15 +219,17 @@ function soucetCisel(řetězec) {
 let vysledek = soucetCisel(retezec);
 document.write("Součet čísel v řetězci je: " + vysledek); // Vypíše součet čísel
 */
+// třetí text pro commit
 
-<h2> Ahoj světe! </h2>
-<button onclick="zmenPozdrav()">Změnit pozdrav</button>
 
-<script>
+
+
     function zmenPozdrav() {
         let e = document.getElementsByTagName("h2")[0];
         e.innerHTML = prompt("Zadej nový pozdrav:");
     }
+
+// třetí text pro commit
 
 </script>
 </body>
