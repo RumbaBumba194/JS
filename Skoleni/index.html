@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Různé pomůcky
+/*
+        document.write("<h1>Nejsem tu.</h1>");
+        console.log("Text pro console v F11");
+
+        alert("Vyskakovací_okno"); // Upozornění
+        // let hodnota = prompt("Zadej hodnotu:"); // Zadání hodnoty
+        confirm("Y/N"); // Y = True ; N = False
+
+        let hodnota = 5;
+        let text = "Trol lol looool"
+
+        document.write(typeof hodnota); // Vypsání typu hodnoty
+
+        document.write("</br>"); // Odřádkování
+        document.write(typeof text);
+
+        parseFloat(sem zadat co chceme převést na float)
+        parseInt(sem zadat co chceme převést na int)
+
+        let s = "Dobrý den, máte slovo! "
+        const zacina = s.startsWith ("Dobrý"); // Pokud ano - True
+        const konci = s.endsWith ("slovo!"); // Pokud ano - True
+        const obsahuje = s.includes ("slovo"); // Pokud ano - True
+        const podretezec = s.substring(0, 5); String, "Dobrý"
+        const pozice = s.indexOf("slovo"); // Number, 16
+        s = s.toUpperCase(); // na velká písmena
+        s = s.toLowerCase(); // na malá písmena
+        
+*/
+
+/*
+// Funkce kalkulacka
+        let a = parseFloat(prompt("Zadej první číslo:"));
+        let b = parseFloat(prompt("Zadej druhé číslo:"));
+
+        scitani = a + b;
+        odcitani = a - b;
+        nasobeni = a * b;
+        deleni = a / b;
+
+        document.write("<h1>")
+        document.write("Výsledky:");
+        document.write("</br>");
+        document.write("Soucet je: " + (scitani));
+        document.write("</br>");
+        document.write("Rozdíl je: " + (odcitani));
+        document.write("</br>");
+        document.write(nasobeni);
+        document.write("</br>");
+        document.write(deleni);
+        document.write("</h1>");
+*/
+
+/*
+        const vstup = " C++ je [kolikrat] KRÁT lepší!"
+
+        let vystup = vstup.trim(); 
+        vystup = vstup.toLowerCase();
+        vystup = vstup.replace("c++", "JavaScript")
+        vystup = vstup.replace("[kolikrat]", "5")
+
+        document.write(vystup.startsWith "JavaScript");
+        document.write(vystup.replace["kolikrat"], "5");
+        document.write(vstup);
+        document.write("</br>");
+        document.write(odstraneni_mezer);
+        document.write("</br>");
+        document.write(naMale);
+        document.write("</br>");
+        document.write(nahrada);
+        document.write("</br>");
+        document.write(pocet);
+*/
+
+/*
+// Porovnávač čísel
+        let a = parseFloat(prompt("Zadej první číslo:"));
+        let b = parseFloat(prompt("Zadej druhé číslo:"));
+
+        if (a == b)
+            document.write("Jsou si rovna");
+        else if (a > b)
+            document.write("První číslo je větší")
+        else if (a < b) 
+            document.write("Druhé číslo je větší");
+*/
+
+/*
+// Kontrola textu zda je velkými čísly
+//        vstup = "Ty Demente jeden! Okamžitě si zahoď nohu a utíkej do západu slunce!"
+        vstup = prompt("Zadej text:");
+
+        if (vstup == vstup.toUpperCase())
+            document.write("Text je zapsán velkými písmeny.");
+        else
+            document.write("Text není zapsán velkými písmeny.");
+*/
+
+//Cykly
+/*
+for (let i = 0; i < 10; i++) {
+    document.write(i + "<br>");
+    // Zákldní hodnota = 0 ; vykonáno do 10ti iterací ; i+1 po každé iteraci
+}
+*/
+
+
+// Vnořování cyklů
+/*
+document.write('<table border="1">')
+for (let i = 1; i <= 10; i++) {
+    document.write('<tr>')
+    for (let j = 1; j <= 10; j++) {
+        document.write('<td style="text-align: center; padding: 5px">' + (i * j) + '</td>');
+    }
+    document.write('</tr>');
+}
+document.write('</table>')
+*/
+
+/*
+for (let i = 0; i < 10; i++)
+    document.write(i + "<br>");
+
+document.write("</br>");
+
+for (let i = 0; i < 10; i++)
+    document.write(i + "<br>");
+
+*/
+
+/*
+    do {
+    let a = parseFloat(prompt("Zadej první číslo:"));
+    let b = parseFloat(prompt("Zadej druhé číslo:"));
+
+    alert("Součet je: " + (a + b));
+    alert("Rozdíl je: " + (a - b));
+    alert("Součin je: " + (a * b));
+    alert("Podíl je: " + (a / b));
+    } while (confirm)
+*/
+
+/*
+    let scitani = a + b;
+    let odcitani = a - b;
+    let nasobeni = a * b;
+    let deleni = a / b;
+
+    document.write("<h1>")
+    document.write("Výsledky:");
+    document.write("</br>");
+    document.write("Soucet je: " + (scitani));
+    document.write("</br>");
+    document.write("Rozdíl je: " + (odcitani));
+    document.write("</br>");
+    document.write("Součin je: " + nasobeni);
+    document.write("</br>");
+    document.write(deleni);
+    document.write("</h1>");
+    } while (confirm)
+*/
+
+/*
+// den v týdnu
+let den = new Date();
+document.write("Dnes je: " + den.getDay());
+document.write("</br>");
+*/
+
+/*
+// Obrácení řetězce
+s = "karel"; // Původní řetězec
+s = s.split(""); // Rozdělí řetězec na pole znaků
+s.reverse(); // Obrátí pořadí znaků v poli
+s = s.join(""); // Spojí pole znaků zpět do řetězce
+document.write(s); // Vypíše "lerak"
+*/
+
+/*
+// Vypíše zadaný text pozpátku pomocí cyklu
+text = "Ahoj světe!";
+let obracenyText = "";
+for (let i = text.length - 1; i >= 0; i--) {
+    obracenyText += text[i];
+}
+document.write(obracenyText);
+document.write("<br>");
+
+
+// Součet všech čísel v libovolném řetězci
+retezec = "30. narozeniny slavím 1.1.2020";
+
+function soucetCisel(řetězec) {
+    let soucet = 0;
+    let cisla = řetězec.match(/\d+/g);
+    if (cisla) {
+        cisla.forEach(function(cislo) {
+            soucet += parseFloat(cislo);
+        });
+    }
+    return soucet;
+}
+let vysledek = soucetCisel(retezec);
+document.write("Součet čísel v řetězci je: " + vysledek); // Vypíše součet čísel
+*/
+
+<h2> Ahoj světe! </h2>
+<button onclick="zmenPozdrav()">Změnit pozdrav</button>
+
+<script>
+    function zmenPozdrav() {
+        let e = document.getElementsByTagName("h2")[0];
+        e.innerHTML = prompt("Zadej nový pozdrav:");
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8" />
+        <title>Proměnné v JavaScriptu</title>
+    </head>
+
+    <body>
+        <script>
+
+            let kinosal = [];
+
+            for (let i = 0; i < 5; i++) {
+                kinosal[i] = [];
+                for (let j = 0; j < 5; j++) {
+                    kinosal[i][j] = 0; // Naplnění pole nulami
+                }
+            }
+
+            kinosal[2][2] = 1;
+
+            for (let i = 1; i < 4; i++) {
+            kinosal[3][i] = 1;
+            }
+
+            // Naplnění celého posledního řádku
+            for (let i = 0; i < 5; i++) {
+                kinosal[4][i] = 1;
+            }
+
+            document.write("<table border='1'>");
+
+            for (let i = 0; i < kinosal.length; i++) {
+                document.write("<tr>");
+                for (let j = 0; j < kinosal[i].length; j++) {
+                    document.write("<td>"+ kinosal[i][j] + "</td>");
+                }
+                document.write("</tr>");
+            }
+
+            document.write("</table>");
+
+
+        </script>
+    </body>
+</html>
